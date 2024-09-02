@@ -21,13 +21,13 @@
     const seatName = {
         'Leo':"G12",
         'Hans':"G20",
-		'jill':"A01",
+	'jill':"A01",
     }
     function changeVal(event){
         const seatEl = document.getElementById('seat');
 
         seatEl.innerText= seatName[event.value] || "未有專屬代碼 或 輸入錯誤!!!"
-	seatEl.style.color = "#FF0000";
+	seatEl.style.color = "#0000FF";
         console.log(event.value)
     }
 </script>
