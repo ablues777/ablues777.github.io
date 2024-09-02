@@ -4,16 +4,16 @@
 <body bgcolor="#e0cdcf">
 	<center><img src="./pic.jpg" width="400" height="500"/></center>
 	<div>
-		<h2>歡迎來到我們的婚禮<br>
-			請輸入您的全名，以獲取今天的專屬代碼 ♥</h2>
-		<input id="inputName" onchange="changeVal(this)" style="height:60px;width:180px;font-size:26pt;"/>
+		<h1>歡迎來到我們的婚禮<br>
+			請輸入您的全名，以獲取今天的專屬代碼 ♥</h1>
+		<input id="inputName" onchange="changeVal(this)" style="height:80px;width:280px;font-size:50pt;"/>
 		
 		<!--<label id="seat" style="font-family:Microsoft JhengHei;font-size:24pt">-->
 		<!--<P>您的專屬代碼是：<label id="seat" style="font-family:Microsoft JhengHei;font-size:24pt"></label></p>-->
 		<!--</label>-->
 	</div>
 	<div>
-		<label style="font-size:40pt"> 您的專屬代碼是：</label><label id="seat" style="font-family:Microsoft JhengHei;font-size:30pt"></label>
+		<label style="font-size:60pt"> 您的專屬代碼是：</label><label id="seat" style="font-family:Microsoft JhengHei;font-size:70pt;color:blue"></label>
 	</div>
     
 </body>
@@ -27,6 +27,7 @@
         const seatEl = document.getElementById('seat');
 
         seatEl.innerText= seatName[event.value] || "未有專屬代碼 或 輸入錯誤!!!"
+	seatEl.style.color = "#FF0000";
         console.log(event.value)
     }
 </script>
