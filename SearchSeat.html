@@ -1,0 +1,22 @@
+
+<html>
+
+<body>
+    <label id="seat"></label>
+    <input id="inputName" onchange="changeVal(this)" />
+</body>
+<script>
+    const seatName = {
+        'Leo':"G12",
+        'Hans':"G20",
+		'jill':"A01",
+    }
+    function changeVal(event){
+        const seatEl = document.getElementById('seat');
+
+        seatEl.innerText= seatName[event.value] || "未有座位"
+        console.log(event.value)
+
+    }
+</script>
+</html>
