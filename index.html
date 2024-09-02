@@ -1,23 +1,29 @@
 
 <html>
 
-<body>
-    <label id="seat"></label>
-    <input id="inputName" onchange="changeVal(this)" />
+<body bgcolor="#e0cdcf">
+	<img src="./pic.jpg" width="200" height="300"/>
+	<div>
+		<h2>歡迎來到我們的婚禮<br>
+			請輸入您的全名，以獲取今天的專屬代碼 ♥</h2>
+		<input id="inputName" onchange="changeVal(this)" style="height:60px;width:180px;font-size:26pt;" <P> 您的專屬代碼是：<label id="seat" style="font-family:Microsoft JhengHei;font-size:30pt"></label></p>
+		<!--<label id="seat" style="font-family:Microsoft JhengHei;font-size:24pt">-->
+		<!--<P>您的專屬代碼是：<label id="seat" style="font-family:Microsoft JhengHei;font-size:24pt"></label></p>-->
+		<!--</label>-->
+	</div>
+    
 </body>
 <script>
     const seatName = {
         'Leo':"G12",
         'Hans':"G20",
-	'jill':"A01",
-	'Katy':"C01",
+		'jill':"A01",
     }
     function changeVal(event){
         const seatEl = document.getElementById('seat');
 
-        seatEl.innerText= seatName[event.value] || "未有座位"
+        seatEl.innerText= seatName[event.value] || "未有專屬代碼 或 輸入錯誤!!!"
         console.log(event.value)
-
     }
 </script>
 </html>
